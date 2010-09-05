@@ -1,0 +1,3 @@
+[submodule "repos/llvm"]
+	path = repos/llvm
+	url = http://github.com/earl/llvm-mirror.git

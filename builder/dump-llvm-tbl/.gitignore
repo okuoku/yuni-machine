@@ -4,3 +4,5 @@ PowerPC
 CellSPU
 X86
 out.txt
+out2.txt
+x86insts.scm

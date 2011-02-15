@@ -1,6 +1,6 @@
 [submodule "repos/llvm"]
 	path = repos/llvm
-	url = http://github.com/earl/llvm-mirror.git
+	url = http://llvm.org/git/llvm.git
 [submodule "repos/binutils"]
 	path = repos/binutils
 	url = http://sources.redhat.com/git/binutils.git

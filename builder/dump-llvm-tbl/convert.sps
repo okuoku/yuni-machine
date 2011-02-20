@@ -33,6 +33,9 @@
          ((and (string=? "bits<8>" type)
                (string=? "Opcode" name))
           (list 'opcode (bits->number datum)))
+         ((and (string=? "bits<64>" type)
+               (string=? "TSFlags" name))
+          (list 'tsflags (bits->number datum)))
          ((and (string=? "AsmString" name)
                (string=? "string" type))
           (list 'asmstring (string->datum datum)))
@@ -46,6 +49,9 @@
       '())))
 
 (define (conv x)
+  (display (list 'convert (car x))
+           (current-error-port))
+  (newline (current-error-port))
   (list (string->symbol (car x)) (map conv-node (cdr x))))
 
 (define (out)
